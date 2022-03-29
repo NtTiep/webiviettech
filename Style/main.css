@@ -1,0 +1,604 @@
+
+/* PC */
+@media (min-width: 1024px) {
+    * {
+        padding: 0;
+        margin: 0;     
+    }
+    /* COMMON */
+    .col-four {
+        display: inline-block;
+    }
+    .col-infor {
+        width: 33%;
+        border: 1px dashed #ca3438;
+    }
+    /* Opening */
+    .horizontal_menu {
+        display: none;
+    }
+    #head {
+        width: 100%;
+        height: 140px;
+        border-bottom: 5px solid #ca3438;
+        margin-bottom: 1px;
+        display: block;
+    }
+    #head .logo {
+        height: 60px;
+        display: inline-block;
+    }
+    
+    #list-menu {
+        margin-top: 10px;
+        font-size: 20px;
+        list-style-type: none;
+        display: inline-block;
+    }
+    
+    #list-menu li:hover .list-menu-2 {
+        display: block;
+    
+    }
+    #list-menu .list-menu-2 {
+        position: absolute;
+        background-color: white;
+        color: black;  
+        border-bottom: 2px #ca3438;
+        width: 170px;
+        display: none;
+        padding-right: 10px;
+        font-size: 15px;
+    
+    }
+    
+    #list-menu .list-menu-2 > li {  
+        border-right: none;
+        padding: 5px;
+        border-bottom: 2px solid #ca3438;
+        width: 100%;
+    }
+    
+    .more-icon:hover {
+        color: #ca3438;
+    }
+    #list-menu > li > a:hover {
+        color: #ca3438;
+    }
+    
+    #list-menu li {
+        display: inline-block;
+        border-right: 1px solid #000;
+        padding-right: 8px;
+    }
+    
+    #list-menu li > a {
+        text-decoration: none;
+        color: black; 
+    }
+    
+    #head .search-icon {
+        float: right;
+        font-size: 21px;
+        padding-left: 14px;
+        clear: both;
+        color: #ca3438;
+    }
+    #head .search-icon:hover {
+        cursor: pointer;
+        opacity: 0.6;
+    }
+    #slideshow {
+        overflow: hidden;
+        height: 280px;
+        width: 100%;
+    }
+    .slide-wrapper {
+        width: 2912px;
+        -webkit-animation: slide 14s ease infinite;
+    }
+    .slide {
+        float: left;
+        height: 280px;
+        width: 728px;
+    }
+    @-webkit-keyframes slide {
+        20% {margin-left: 0px;}
+        30% {margin-left: -728px;}
+        50% {margin-left: -728px;}
+        60% {margin-left: -1456px;}
+        80% {margin-left: -1456px;}
+    }
+    
+    
+    /* MAIN */
+     
+    
+    /* content-section */
+    #content-section {
+        clear: both;
+        height: 450px;
+        width: 100%;
+        background-color: #ca3438;
+        padding-top: 16px;
+    }
+    
+     /*  */
+    #content-section .box1 {
+        width: 1200px;
+        height: 380px;
+        margin-top: 20px;
+        display: flex;
+        padding-left: 18%;
+    }
+    
+    #content-section .sub-box-1 {
+        width: 240px;
+        height: 380px;
+        border: 1px dashed white;
+        margin-right: 10px;
+    } 
+    
+    #content-section .sub-box-2 {
+        height: 380px;
+        margin-left: 10px;
+        border: 1px dashed white; 
+        display: inline-block;
+        float: right;
+    }
+    
+    #content-section .box-sign {
+        padding: 8px;
+        color: white;
+        text-align: center; 
+    }
+    
+    #content-section .sign-icon {
+        background-color: rgba(255, 112, 113 );
+        border-radius: 50% ;
+        font-size: 30px;
+        padding: 5px;
+    }
+    
+    #content-section .write-form {
+        width: 200px;
+        line-height: 2;
+        margin-top: 5px;
+        margin-bottom: 4px;
+        background-color: white;
+    }
+    #content-section .loggin {
+        font-size: 20px;
+    }
+    #content-section .log-in {
+        margin-top: 16px;
+        font-size: 10px;
+        background-color: #F89800;
+        border: none;
+        padding: 10px;
+    }
+    
+    #content-section .log-in:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    
+    #content-section .content-learn {
+        padding: 10px 0 10px 10px;
+    
+    }
+    
+    #content-section .name-learn {
+         text-align: left;
+         font-size: 20px;
+         color: aliceblue;
+         padding-bottom: 10px;
+         border-bottom: 0.1px dashed rgb(138, 136, 136);
+    }
+    
+    #content-section .sign-icon-2 {
+        float: right;
+    }
+    
+    #content-section .sign-icon-2:hover {
+        cursor: pointer;
+        opacity: 0.4;
+    }
+        
+    #content-section .image-learn {
+        clear: both;
+        width: 127px;
+        height: 127px;
+        border-radius: 50%;
+        border: 2px dashed rgb(138, 136, 136);
+    }
+    #content-section .list-learn {
+        display: inline-block;
+        text-align: center;
+        list-style: none;
+        padding: 2px;
+        color: white;
+    }
+    #content-section .font-learn {
+        font-size: .7em;
+    }
+
+    #content-section .list-learn:hover {
+        cursor: pointer;
+    }
+    
+    /* INFORMATION */
+    
+    #nav {
+        width: auto;
+        height: 400px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #nav .info-nav {
+        display: inline-block;
+    }
+    
+    #nav .info-banner {
+        margin: 50px;
+        padding: 2px;
+        width: 259px;
+        height: 259px;
+        border-radius: 50%;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    }
+    #nav .logo-2 {
+        text-align: center;
+        
+    }
+    #nav .decrip {
+        text-align: justify;
+        max-width: 400px;
+    }
+    #nav .nav-btn {
+        background-color: #ca3438;
+        color: white;
+        float: right;
+    }
+    #nav .nav-btn:hover {
+        background-color: #F89800;
+        cursor: pointer;
+    }
+    
+    #nav .connect-icon {
+        clear: both;
+        font-size: 30px;
+        border: 1px solid #ca3438;
+        border-radius: 50%;
+        padding: 4px;
+    
+    }
+    
+    /* SCHEDULE */
+    
+    #schedule {
+        clear: both;
+        width: 100%;
+        height: 500px;
+        background-color: #ca3438;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #schedule .sub-schedule {
+        width: 300px;
+        height: 400px;
+        display: inline-block;
+    }
+    
+    #schedule .schedule-icon {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 12px;
+    
+    }
+    #schedule .schedule-icon:hover {
+        text-decoration: underline;
+    }
+    
+    #schedule .img-schedule {
+        width: 64px;
+        height: 64px;
+    }
+    
+    #schedule .ul-sche {
+        list-style: none;
+        padding: 10px;
+        margin:2px ;
+    }
+    
+    #schedule .ul-sche > li {
+        padding-bottom: 15px;
+    }
+    
+    #schedule .content-sche {
+        float: right;
+        padding-top: 10px;
+        padding-right: 20px;
+        color: white ;
+        font-size: 11px;
+    }
+    
+    /* SUB-SCHEDULE-2 */
+    
+    #schedule .sub-schedule-2 {
+        width: 302px;
+        height: 400px;
+        display: inline-block;
+    }
+    
+    
+    .sub-schedule-2 .sign-icon-3 {
+        color: white;
+        font-size: 20px;
+        display: inline-block;
+        list-style: none;
+    
+    }
+    .sub-schedule-2 .sign-icon-3:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    .left {
+        padding-left: 12em;
+    }
+    
+    /* BONUS LEARN */
+    
+    #bonus-learn {
+        width: 350px;
+        height: 450px;
+        display: inline-block;
+        border: 1px dashed #fff;
+        padding: 10px;
+    }
+    #bonus-learn .ul-sche-2 {
+        margin-top: 10px;
+    }
+    #bonus-learn .sign-icon-4 {
+        color: white;
+        font-size: 25px;
+        border-bottom: 1px dashed rgb(138, 136, 136);
+        padding-bottom: 15px;
+    }
+    
+    #bonus-learn .sign-icon--4:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    #bonus-learn .bonus-span {
+        float: right;
+        color: white;
+        font-size: 20px;
+    }
+    
+    #bonus-learn .img-schedule-2 {
+        width: 64px;
+        height: 64px;
+        padding-top: 20px;
+    }
+    #bonus-learn ul > li {
+        height: 100px;
+        list-style: none;
+    }
+    #bonus-learn .text-under:hover {
+        text-decoration: underline;
+    }
+    
+    /* NEWS & EVENTS */
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 30px;
+    }
+    
+    /* Box 1 */
+    #box__1 {
+        width: 600px;
+    }
+    #news .sign-news {
+        width: 45px;
+        height: 45px;
+        font-size: 50px;
+    }
+    
+    .ti-book {
+        font-size: 20px;
+    }
+    #news {
+        display: inline-block;
+        width: 300px;
+    }
+    #news .news__head {
+        display: inline-block;
+        padding-bottom: 15px;
+    
+    }
+    #news-aniversary {
+        width: 600px;
+        padding-top: 20px;
+        border-top: 1px dashed #000;
+    }
+    
+    #news-aniversary .news-1 {
+        display: inline-block;
+    }
+    #news-aniversary .news-2 {
+        display: inline-block;
+        padding-left: 16px;
+        height: 180px;
+        text-align: start;
+        line-height: 1.9;
+    }
+    
+    #news-aniversary .news__img {
+        width: 264px;
+        height: 175px;
+    }
+    #news-aniversary .news-sale {
+        display: block;
+    }
+    
+    #news-aniversary .news-btn {
+       float: right;
+       background-color: #ca3438;
+       color: white;
+       border: none;
+       padding: 5px;
+    }
+    #news-aniversary .news-btn:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    /* NEWS OPENED */
+    
+    #news-opened {
+        padding: 50px 0 0 0;
+        width: 600px;
+        border-bottom: 1px dashed #000;
+    }
+    #news-opened .content-news {
+        display: block;
+        font-size: 25epx;
+        border-bottom: 1px dashed #000;
+    }
+    
+     .sub-opened {
+        display: inline-block;
+        padding: 20px 10px 0 10px;
+    }
+    .img-opened {
+        width: 100px;
+        height: 70px;
+    }
+    
+    /* STUDENT-TALK */
+    
+    #rep {
+        width: 600px;
+        padding-top: 16px;
+        font-size: 20px;
+    }
+    #slideshow-2 {
+        overflow: hidden;
+        height: 600px;
+        width: 100%;
+      }
+     .slide-wrapper-2 {
+        width: 2912px;
+        -webkit-animation: slide 14s ease infinite;
+      }
+     .slide2 {
+        float: left;
+        height: 600px;
+        width: 728px;
+      }
+     @-webkit-keyframes slide {
+        20% {margin-left: 0px;}
+        30% {margin-left: -728px;}
+        50% {margin-left: -728px;}
+        60% {margin-left: -1456px;}
+        80% {margin-left: -1456px;}
+      }
+    
+    
+    
+    
+    /* BOX__2 */
+    #box__2 {
+        width: 600px;
+    }
+    
+    #news__2 {
+        border-bottom: 1px dashed #000;
+        margin-bottom: 50px;
+    }
+    #news__2 .sign-news-2 {
+        width: 45px;
+        height: 45px;
+        font-size: 37px;
+    }
+    #news__2 .news__head-2 {
+        display: inline-block;
+        height: 49px;
+    }
+    
+    
+    #box__2 .img-jobs {
+        width: 65px;
+        height: 65px;
+    }
+    
+    #box__2 .content-sche-2 {
+        display: inline-block;
+        padding-left: 15px;
+        line-height: 1.6;
+    }
+    
+    #box__2 .list-jobs {
+        font-size: 15px;
+        padding-top: 8px;
+    }
+    
+    #box__2 .ul-list-jobs {
+        list-style: none;
+    }
+    
+    #box__2 .bonus-color {
+        color: #ca3438;
+    }
+    
+    #box__2 .bonus-color:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        text-decoration: underline;
+        color: green;
+    }
+    
+    
+    /* NHA TUYEN DUNG */
+    #find-jobs {
+        border-bottom: 1px dashed #000;
+    }
+    #find-jobs .company {
+        display: inline-block;
+        padding: 20px 10px; 
+        font-size: 20px;
+    }
+    
+    .ul-list-jobs-2 {
+        padding: 10px 5px;
+        list-style: none;
+    }
+    .intro-company {
+        display: inline-block;
+        width: 400px;
+        padding-left: 20px;
+    }
+    .color-word {
+        color: #ca3438;
+    }
+    
+    /* END */
+    #end {
+        height: 100px;
+        background-color: rgba(169, 169, 169 );
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+    }
+}
